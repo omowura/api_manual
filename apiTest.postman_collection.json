@@ -1,0 +1,584 @@
+{
+	"info": {
+		"_postman_id": "e4e9f859-0152-411d-a739-11a843194c88",
+		"name": "apiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21638634"
+	},
+	"item": [
+		{
+			"name": "Search by country name Finland",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validate the Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/Finland",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"Finland"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by country name Finland",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restcountries.com/v3.1/name/Finland",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"name",
+								"Finland"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jul 2022 21:36:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-length",
+							"value": "1266"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": {\n            \"common\": \"Finland\",\n            \"official\": \"Republic of Finland\",\n            \"nativeName\": {\n                \"fin\": {\n                    \"official\": \"Suomen tasavalta\",\n                    \"common\": \"Suomi\"\n                },\n                \"swe\": {\n                    \"official\": \"Republiken Finland\",\n                    \"common\": \"Finland\"\n                }\n            }\n        },\n        \"tld\": [\n            \".fi\"\n        ],\n        \"cca2\": \"FI\",\n        \"ccn3\": \"246\",\n        \"cca3\": \"FIN\",\n        \"cioc\": \"FIN\",\n        \"independent\": true,\n        \"status\": \"officially-assigned\",\n        \"unMember\": true,\n        \"currencies\": {\n            \"EUR\": {\n                \"name\": \"Euro\",\n                \"symbol\": \"€\"\n            }\n        },\n        \"idd\": {\n            \"root\": \"+3\",\n            \"suffixes\": [\n                \"58\"\n            ]\n        },\n        \"capital\": [\n            \"Helsinki\"\n        ],\n        \"altSpellings\": [\n            \"FI\",\n            \"Suomi\",\n            \"Republic of Finland\",\n            \"Suomen tasavalta\",\n            \"Republiken Finland\"\n        ],\n        \"region\": \"Europe\",\n        \"subregion\": \"Northern Europe\",\n        \"languages\": {\n            \"fin\": \"Finnish\",\n            \"swe\": \"Swedish\"\n        },\n        \"translations\": {\n            \"ara\": {\n                \"official\": \"جمهورية فنلندا\",\n                \"common\": \"فنلندا\"\n            },\n            \"ces\": {\n                \"official\": \"Finská republika\",\n                \"common\": \"Finsko\"\n            },\n            \"cym\": {\n                \"official\": \"Republic of Finland\",\n                \"common\": \"Finland\"\n            },\n            \"deu\": {\n                \"official\": \"Republik Finnland\",\n                \"common\": \"Finnland\"\n            },\n            \"est\": {\n                \"official\": \"Soome Vabariik\",\n                \"common\": \"Soome\"\n            },\n            \"fin\": {\n                \"official\": \"Suomen tasavalta\",\n                \"common\": \"Suomi\"\n            },\n            \"fra\": {\n                \"official\": \"République de Finlande\",\n                \"common\": \"Finlande\"\n            },\n            \"hrv\": {\n                \"official\": \"Republika Finska\",\n                \"common\": \"Finska\"\n            },\n            \"hun\": {\n                \"official\": \"Finn Köztársaság\",\n                \"common\": \"Finnország\"\n            },\n            \"ita\": {\n                \"official\": \"Repubblica di Finlandia\",\n                \"common\": \"Finlandia\"\n            },\n            \"jpn\": {\n                \"official\": \"フィンランド共和国\",\n                \"common\": \"フィンランド\"\n            },\n            \"kor\": {\n                \"official\": \"핀란드 공화국\",\n                \"common\": \"핀란드\"\n            },\n            \"nld\": {\n                \"official\": \"Republiek Finland\",\n                \"common\": \"Finland\"\n            },\n            \"per\": {\n                \"official\": \"جمهوری فنلاند\",\n                \"common\": \"فنلاند\"\n            },\n            \"pol\": {\n                \"official\": \"Republika Finlandii\",\n                \"common\": \"Finlandia\"\n            },\n            \"por\": {\n                \"official\": \"República da Finlândia\",\n                \"common\": \"Finlândia\"\n            },\n            \"rus\": {\n                \"official\": \"Финляндская Республика\",\n                \"common\": \"Финляндия\"\n            },\n            \"slk\": {\n                \"official\": \"Fínska republika\",\n                \"common\": \"Fínsko\"\n            },\n            \"spa\": {\n                \"official\": \"República de Finlandia\",\n                \"common\": \"Finlandia\"\n            },\n            \"swe\": {\n                \"official\": \"Republiken Finland\",\n                \"common\": \"Finland\"\n            },\n            \"urd\": {\n                \"official\": \"جمہوریہ فن لینڈ\",\n                \"common\": \"فن لینڈ\"\n            },\n            \"zho\": {\n                \"official\": \"芬兰共和国\",\n                \"common\": \"芬兰\"\n            }\n        },\n        \"latlng\": [\n            64,\n            26\n        ],\n        \"landlocked\": false,\n        \"borders\": [\n            \"NOR\",\n            \"SWE\",\n            \"RUS\"\n        ],\n        \"area\": 338424,\n        \"demonyms\": {\n            \"eng\": {\n                \"f\": \"Finnish\",\n                \"m\": \"Finnish\"\n            },\n            \"fra\": {\n                \"f\": \"Finlandaise\",\n                \"m\": \"Finlandais\"\n            }\n        },\n        \"flag\": \"🇫🇮\",\n        \"maps\": {\n            \"googleMaps\": \"https://goo.gl/maps/HjgWDCNKRAYHrkMn8\",\n            \"openStreetMaps\": \"openstreetmap.org/relation/54224\"\n        },\n        \"population\": 5530719,\n        \"gini\": {\n            \"2018\": 27.3\n        },\n        \"fifa\": \"FIN\",\n        \"car\": {\n            \"signs\": [\n                \"FIN\"\n            ],\n            \"side\": \"right\"\n        },\n        \"timezones\": [\n            \"UTC+02:00\"\n        ],\n        \"continents\": [\n            \"Europe\"\n        ],\n        \"flags\": {\n            \"png\": \"https://flagcdn.com/w320/fi.png\",\n            \"svg\": \"https://flagcdn.com/fi.svg\"\n        },\n        \"coatOfArms\": {\n            \"png\": \"https://mainfacts.com/media/images/coats_of_arms/fi.png\",\n            \"svg\": \"https://mainfacts.com/media/images/coats_of_arms/fi.svg\"\n        },\n        \"startOfWeek\": \"monday\",\n        \"capitalInfo\": {\n            \"latlng\": [\n                60.17,\n                24.93\n            ]\n        },\n        \"postalCode\": {\n            \"format\": \"#####\",\n            \"regex\": \"^(?:FI)*(\\\\d{5})$\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Search by country name Sweden",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validate the Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/Sweden",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"Sweden"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by country name Sweden",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restcountries.com/v3.1/name/Sweden",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"name",
+								"Sweden"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jul 2022 02:17:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-length",
+							"value": "1304"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": {\n            \"common\": \"Sweden\",\n            \"official\": \"Kingdom of Sweden\",\n            \"nativeName\": {\n                \"swe\": {\n                    \"official\": \"Konungariket Sverige\",\n                    \"common\": \"Sverige\"\n                }\n            }\n        },\n        \"tld\": [\n            \".se\"\n        ],\n        \"cca2\": \"SE\",\n        \"ccn3\": \"752\",\n        \"cca3\": \"SWE\",\n        \"cioc\": \"SWE\",\n        \"independent\": true,\n        \"status\": \"officially-assigned\",\n        \"unMember\": true,\n        \"currencies\": {\n            \"SEK\": {\n                \"name\": \"Swedish krona\",\n                \"symbol\": \"kr\"\n            }\n        },\n        \"idd\": {\n            \"root\": \"+4\",\n            \"suffixes\": [\n                \"6\"\n            ]\n        },\n        \"capital\": [\n            \"Stockholm\"\n        ],\n        \"altSpellings\": [\n            \"SE\",\n            \"Kingdom of Sweden\",\n            \"Konungariket Sverige\"\n        ],\n        \"region\": \"Europe\",\n        \"subregion\": \"Northern Europe\",\n        \"languages\": {\n            \"swe\": \"Swedish\"\n        },\n        \"translations\": {\n            \"ara\": {\n                \"official\": \"مملكة السويد\",\n                \"common\": \"السويد\"\n            },\n            \"ces\": {\n                \"official\": \"Švédské království\",\n                \"common\": \"Švédsko\"\n            },\n            \"cym\": {\n                \"official\": \"Kingdom of Sweden\",\n                \"common\": \"Sweden\"\n            },\n            \"deu\": {\n                \"official\": \"Königreich Schweden\",\n                \"common\": \"Schweden\"\n            },\n            \"est\": {\n                \"official\": \"Rootsi Kuningriik\",\n                \"common\": \"Rootsi\"\n            },\n            \"fin\": {\n                \"official\": \"Ruotsin kuningaskunta\",\n                \"common\": \"Ruotsi\"\n            },\n            \"fra\": {\n                \"official\": \"Royaume de Suède\",\n                \"common\": \"Suède\"\n            },\n            \"hrv\": {\n                \"official\": \"Kraljevina Švedska\",\n                \"common\": \"Švedska\"\n            },\n            \"hun\": {\n                \"official\": \"Svéd Királyság\",\n                \"common\": \"Svédország\"\n            },\n            \"ita\": {\n                \"official\": \"Regno di Svezia\",\n                \"common\": \"Svezia\"\n            },\n            \"jpn\": {\n                \"official\": \"スウェーデン王国\",\n                \"common\": \"スウェーデン\"\n            },\n            \"kor\": {\n                \"official\": \"스웨덴 왕국\",\n                \"common\": \"스웨덴\"\n            },\n            \"nld\": {\n                \"official\": \"Koninkrijk Zweden\",\n                \"common\": \"Zweden\"\n            },\n            \"per\": {\n                \"official\": \"پادشاهی سوئد\",\n                \"common\": \"سوئد\"\n            },\n            \"pol\": {\n                \"official\": \"Królestwo Szwecji\",\n                \"common\": \"Szwecja\"\n            },\n            \"por\": {\n                \"official\": \"Reino da Suécia\",\n                \"common\": \"Suécia\"\n            },\n            \"rus\": {\n                \"official\": \"Королевство Швеция\",\n                \"common\": \"Швеция\"\n            },\n            \"slk\": {\n                \"official\": \"Švédske kráľovstvo\",\n                \"common\": \"Švédsko\"\n            },\n            \"spa\": {\n                \"official\": \"Reino de Suecia\",\n                \"common\": \"Suecia\"\n            },\n            \"swe\": {\n                \"official\": \"Konungariket Sverige\",\n                \"common\": \"Sverige\"\n            },\n            \"urd\": {\n                \"official\": \"مملکتِ سویڈن\",\n                \"common\": \"سویڈن\"\n            },\n            \"zho\": {\n                \"official\": \"瑞典王国\",\n                \"common\": \"瑞典\"\n            }\n        },\n        \"latlng\": [\n            62,\n            15\n        ],\n        \"landlocked\": false,\n        \"borders\": [\n            \"FIN\",\n            \"NOR\"\n        ],\n        \"area\": 450295,\n        \"demonyms\": {\n            \"eng\": {\n                \"f\": \"Swedish\",\n                \"m\": \"Swedish\"\n            },\n            \"fra\": {\n                \"f\": \"Suédoise\",\n                \"m\": \"Suédois\"\n            }\n        },\n        \"flag\": \"🇸🇪\",\n        \"maps\": {\n            \"googleMaps\": \"https://goo.gl/maps/iqygE491ADVgnBW39\",\n            \"openStreetMaps\": \"https://www.openstreetmap.org/relation/52822\"\n        },\n        \"population\": 10353442,\n        \"gini\": {\n            \"2018\": 30\n        },\n        \"fifa\": \"SWE\",\n        \"car\": {\n            \"signs\": [\n                \"S\"\n            ],\n            \"side\": \"right\"\n        },\n        \"timezones\": [\n            \"UTC+01:00\"\n        ],\n        \"continents\": [\n            \"Europe\"\n        ],\n        \"flags\": {\n            \"png\": \"https://flagcdn.com/w320/se.png\",\n            \"svg\": \"https://flagcdn.com/se.svg\"\n        },\n        \"coatOfArms\": {\n            \"png\": \"https://mainfacts.com/media/images/coats_of_arms/se.png\",\n            \"svg\": \"https://mainfacts.com/media/images/coats_of_arms/se.svg\"\n        },\n        \"startOfWeek\": \"monday\",\n        \"capitalInfo\": {\n            \"latlng\": [\n                59.33,\n                18.05\n            ]\n        },\n        \"postalCode\": {\n            \"format\": \"SE-### ##\",\n            \"regex\": \"^(?:SE)*(\\\\d{5})$\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Search by country name Estonia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Vaidate the Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/Estonia",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"Estonia"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by country name Estonia",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.com/v3.1/name/Estonia",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"name",
+								"Estonia"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jul 2022 21:37:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-length",
+							"value": "1259"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": {\n            \"common\": \"Estonia\",\n            \"official\": \"Republic of Estonia\",\n            \"nativeName\": {\n                \"est\": {\n                    \"official\": \"Eesti Vabariik\",\n                    \"common\": \"Eesti\"\n                }\n            }\n        },\n        \"tld\": [\n            \".ee\"\n        ],\n        \"cca2\": \"EE\",\n        \"ccn3\": \"233\",\n        \"cca3\": \"EST\",\n        \"cioc\": \"EST\",\n        \"independent\": true,\n        \"status\": \"officially-assigned\",\n        \"unMember\": true,\n        \"currencies\": {\n            \"EUR\": {\n                \"name\": \"Euro\",\n                \"symbol\": \"€\"\n            }\n        },\n        \"idd\": {\n            \"root\": \"+3\",\n            \"suffixes\": [\n                \"72\"\n            ]\n        },\n        \"capital\": [\n            \"Tallinn\"\n        ],\n        \"altSpellings\": [\n            \"EE\",\n            \"Eesti\",\n            \"Republic of Estonia\",\n            \"Eesti Vabariik\"\n        ],\n        \"region\": \"Europe\",\n        \"subregion\": \"Northern Europe\",\n        \"languages\": {\n            \"est\": \"Estonian\"\n        },\n        \"translations\": {\n            \"ara\": {\n                \"official\": \"جمهورية إستونيا\",\n                \"common\": \"إستونيا\"\n            },\n            \"ces\": {\n                \"official\": \"Estonská republika\",\n                \"common\": \"Estonsko\"\n            },\n            \"cym\": {\n                \"official\": \"Gweriniaeth Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"deu\": {\n                \"official\": \"Republik Estland\",\n                \"common\": \"Estland\"\n            },\n            \"est\": {\n                \"official\": \"Eesti Vabariik\",\n                \"common\": \"Eesti\"\n            },\n            \"fin\": {\n                \"official\": \"Viron tasavalta\",\n                \"common\": \"Viro\"\n            },\n            \"fra\": {\n                \"official\": \"République d'Estonie\",\n                \"common\": \"Estonie\"\n            },\n            \"hrv\": {\n                \"official\": \"Republika Estonija\",\n                \"common\": \"Estonija\"\n            },\n            \"hun\": {\n                \"official\": \"Észt Köztársaság\",\n                \"common\": \"Észtország\"\n            },\n            \"ita\": {\n                \"official\": \"Repubblica di Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"jpn\": {\n                \"official\": \"エストニア共和国\",\n                \"common\": \"エストニア\"\n            },\n            \"kor\": {\n                \"official\": \"에스토니아 공화국\",\n                \"common\": \"에스토니아\"\n            },\n            \"nld\": {\n                \"official\": \"Republiek Estland\",\n                \"common\": \"Estland\"\n            },\n            \"per\": {\n                \"official\": \"جمهوری استونی\",\n                \"common\": \"اِستونی\"\n            },\n            \"pol\": {\n                \"official\": \"Republika Estońska\",\n                \"common\": \"Estonia\"\n            },\n            \"por\": {\n                \"official\": \"República da Estónia\",\n                \"common\": \"Estónia\"\n            },\n            \"rus\": {\n                \"official\": \"Эстонская Республика\",\n                \"common\": \"Эстония\"\n            },\n            \"slk\": {\n                \"official\": \"Estónska republika\",\n                \"common\": \"Estónsko\"\n            },\n            \"spa\": {\n                \"official\": \"República de Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"swe\": {\n                \"official\": \"Republiken Estland\",\n                \"common\": \"Estland\"\n            },\n            \"urd\": {\n                \"official\": \"جمہوریہ اسٹونیا\",\n                \"common\": \"اسٹونیا\"\n            },\n            \"zho\": {\n                \"official\": \"爱沙尼亚共和国\",\n                \"common\": \"爱沙尼亚\"\n            }\n        },\n        \"latlng\": [\n            59,\n            26\n        ],\n        \"landlocked\": false,\n        \"borders\": [\n            \"LVA\",\n            \"RUS\"\n        ],\n        \"area\": 45227,\n        \"demonyms\": {\n            \"eng\": {\n                \"f\": \"Estonian\",\n                \"m\": \"Estonian\"\n            },\n            \"fra\": {\n                \"f\": \"Estonienne\",\n                \"m\": \"Estonien\"\n            }\n        },\n        \"flag\": \"🇪🇪\",\n        \"maps\": {\n            \"googleMaps\": \"https://goo.gl/maps/6SsynwGUodL1sDvq8\",\n            \"openStreetMaps\": \"https://www.openstreetmap.org/relation/79510\"\n        },\n        \"population\": 1331057,\n        \"gini\": {\n            \"2018\": 30.3\n        },\n        \"fifa\": \"EST\",\n        \"car\": {\n            \"signs\": [\n                \"EST\"\n            ],\n            \"side\": \"right\"\n        },\n        \"timezones\": [\n            \"UTC+02:00\"\n        ],\n        \"continents\": [\n            \"Europe\"\n        ],\n        \"flags\": {\n            \"png\": \"https://flagcdn.com/w320/ee.png\",\n            \"svg\": \"https://flagcdn.com/ee.svg\"\n        },\n        \"coatOfArms\": {\n            \"png\": \"https://mainfacts.com/media/images/coats_of_arms/ee.png\",\n            \"svg\": \"https://mainfacts.com/media/images/coats_of_arms/ee.svg\"\n        },\n        \"startOfWeek\": \"monday\",\n        \"capitalInfo\": {\n            \"latlng\": [\n                59.43,\n                24.72\n            ]\n        },\n        \"postalCode\": {\n            \"format\": \"#####\",\n            \"regex\": \"^(\\\\d{5})$\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Search by country code FI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/alpha?codes=Fi",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"alpha"
+					],
+					"query": [
+						{
+							"key": "codes",
+							"value": "Fi"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by country code FI",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.com/v3.1/alpha?codes=Fi",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"alpha"
+							],
+							"query": [
+								{
+									"key": "codes",
+									"value": "Fi"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jul 2022 21:37:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-length",
+							"value": "1266"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": {\n            \"common\": \"Finland\",\n            \"official\": \"Republic of Finland\",\n            \"nativeName\": {\n                \"fin\": {\n                    \"official\": \"Suomen tasavalta\",\n                    \"common\": \"Suomi\"\n                },\n                \"swe\": {\n                    \"official\": \"Republiken Finland\",\n                    \"common\": \"Finland\"\n                }\n            }\n        },\n        \"tld\": [\n            \".fi\"\n        ],\n        \"cca2\": \"FI\",\n        \"ccn3\": \"246\",\n        \"cca3\": \"FIN\",\n        \"cioc\": \"FIN\",\n        \"independent\": true,\n        \"status\": \"officially-assigned\",\n        \"unMember\": true,\n        \"currencies\": {\n            \"EUR\": {\n                \"name\": \"Euro\",\n                \"symbol\": \"€\"\n            }\n        },\n        \"idd\": {\n            \"root\": \"+3\",\n            \"suffixes\": [\n                \"58\"\n            ]\n        },\n        \"capital\": [\n            \"Helsinki\"\n        ],\n        \"altSpellings\": [\n            \"FI\",\n            \"Suomi\",\n            \"Republic of Finland\",\n            \"Suomen tasavalta\",\n            \"Republiken Finland\"\n        ],\n        \"region\": \"Europe\",\n        \"subregion\": \"Northern Europe\",\n        \"languages\": {\n            \"fin\": \"Finnish\",\n            \"swe\": \"Swedish\"\n        },\n        \"translations\": {\n            \"ara\": {\n                \"official\": \"جمهورية فنلندا\",\n                \"common\": \"فنلندا\"\n            },\n            \"ces\": {\n                \"official\": \"Finská republika\",\n                \"common\": \"Finsko\"\n            },\n            \"cym\": {\n                \"official\": \"Republic of Finland\",\n                \"common\": \"Finland\"\n            },\n            \"deu\": {\n                \"official\": \"Republik Finnland\",\n                \"common\": \"Finnland\"\n            },\n            \"est\": {\n                \"official\": \"Soome Vabariik\",\n                \"common\": \"Soome\"\n            },\n            \"fin\": {\n                \"official\": \"Suomen tasavalta\",\n                \"common\": \"Suomi\"\n            },\n            \"fra\": {\n                \"official\": \"République de Finlande\",\n                \"common\": \"Finlande\"\n            },\n            \"hrv\": {\n                \"official\": \"Republika Finska\",\n                \"common\": \"Finska\"\n            },\n            \"hun\": {\n                \"official\": \"Finn Köztársaság\",\n                \"common\": \"Finnország\"\n            },\n            \"ita\": {\n                \"official\": \"Repubblica di Finlandia\",\n                \"common\": \"Finlandia\"\n            },\n            \"jpn\": {\n                \"official\": \"フィンランド共和国\",\n                \"common\": \"フィンランド\"\n            },\n            \"kor\": {\n                \"official\": \"핀란드 공화국\",\n                \"common\": \"핀란드\"\n            },\n            \"nld\": {\n                \"official\": \"Republiek Finland\",\n                \"common\": \"Finland\"\n            },\n            \"per\": {\n                \"official\": \"جمهوری فنلاند\",\n                \"common\": \"فنلاند\"\n            },\n            \"pol\": {\n                \"official\": \"Republika Finlandii\",\n                \"common\": \"Finlandia\"\n            },\n            \"por\": {\n                \"official\": \"República da Finlândia\",\n                \"common\": \"Finlândia\"\n            },\n            \"rus\": {\n                \"official\": \"Финляндская Республика\",\n                \"common\": \"Финляндия\"\n            },\n            \"slk\": {\n                \"official\": \"Fínska republika\",\n                \"common\": \"Fínsko\"\n            },\n            \"spa\": {\n                \"official\": \"República de Finlandia\",\n                \"common\": \"Finlandia\"\n            },\n            \"swe\": {\n                \"official\": \"Republiken Finland\",\n                \"common\": \"Finland\"\n            },\n            \"urd\": {\n                \"official\": \"جمہوریہ فن لینڈ\",\n                \"common\": \"فن لینڈ\"\n            },\n            \"zho\": {\n                \"official\": \"芬兰共和国\",\n                \"common\": \"芬兰\"\n            }\n        },\n        \"latlng\": [\n            64,\n            26\n        ],\n        \"landlocked\": false,\n        \"borders\": [\n            \"NOR\",\n            \"SWE\",\n            \"RUS\"\n        ],\n        \"area\": 338424,\n        \"demonyms\": {\n            \"eng\": {\n                \"f\": \"Finnish\",\n                \"m\": \"Finnish\"\n            },\n            \"fra\": {\n                \"f\": \"Finlandaise\",\n                \"m\": \"Finlandais\"\n            }\n        },\n        \"flag\": \"🇫🇮\",\n        \"maps\": {\n            \"googleMaps\": \"https://goo.gl/maps/HjgWDCNKRAYHrkMn8\",\n            \"openStreetMaps\": \"openstreetmap.org/relation/54224\"\n        },\n        \"population\": 5530719,\n        \"gini\": {\n            \"2018\": 27.3\n        },\n        \"fifa\": \"FIN\",\n        \"car\": {\n            \"signs\": [\n                \"FIN\"\n            ],\n            \"side\": \"right\"\n        },\n        \"timezones\": [\n            \"UTC+02:00\"\n        ],\n        \"continents\": [\n            \"Europe\"\n        ],\n        \"flags\": {\n            \"png\": \"https://flagcdn.com/w320/fi.png\",\n            \"svg\": \"https://flagcdn.com/fi.svg\"\n        },\n        \"coatOfArms\": {\n            \"png\": \"https://mainfacts.com/media/images/coats_of_arms/fi.png\",\n            \"svg\": \"https://mainfacts.com/media/images/coats_of_arms/fi.svg\"\n        },\n        \"startOfWeek\": \"monday\",\n        \"capitalInfo\": {\n            \"latlng\": [\n                60.17,\n                24.93\n            ]\n        },\n        \"postalCode\": {\n            \"format\": \"#####\",\n            \"regex\": \"^(?:FI)*(\\\\d{5})$\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Search by country code SE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/alpha?codes=SE",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"alpha"
+					],
+					"query": [
+						{
+							"key": "codes",
+							"value": "SE"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by country code SE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.com/v3.1/alpha?codes=SE",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"alpha"
+							],
+							"query": [
+								{
+									"key": "codes",
+									"value": "SE"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jul 2022 21:38:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-length",
+							"value": "1304"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": {\n            \"common\": \"Sweden\",\n            \"official\": \"Kingdom of Sweden\",\n            \"nativeName\": {\n                \"swe\": {\n                    \"official\": \"Konungariket Sverige\",\n                    \"common\": \"Sverige\"\n                }\n            }\n        },\n        \"tld\": [\n            \".se\"\n        ],\n        \"cca2\": \"SE\",\n        \"ccn3\": \"752\",\n        \"cca3\": \"SWE\",\n        \"cioc\": \"SWE\",\n        \"independent\": true,\n        \"status\": \"officially-assigned\",\n        \"unMember\": true,\n        \"currencies\": {\n            \"SEK\": {\n                \"name\": \"Swedish krona\",\n                \"symbol\": \"kr\"\n            }\n        },\n        \"idd\": {\n            \"root\": \"+4\",\n            \"suffixes\": [\n                \"6\"\n            ]\n        },\n        \"capital\": [\n            \"Stockholm\"\n        ],\n        \"altSpellings\": [\n            \"SE\",\n            \"Kingdom of Sweden\",\n            \"Konungariket Sverige\"\n        ],\n        \"region\": \"Europe\",\n        \"subregion\": \"Northern Europe\",\n        \"languages\": {\n            \"swe\": \"Swedish\"\n        },\n        \"translations\": {\n            \"ara\": {\n                \"official\": \"مملكة السويد\",\n                \"common\": \"السويد\"\n            },\n            \"ces\": {\n                \"official\": \"Švédské království\",\n                \"common\": \"Švédsko\"\n            },\n            \"cym\": {\n                \"official\": \"Kingdom of Sweden\",\n                \"common\": \"Sweden\"\n            },\n            \"deu\": {\n                \"official\": \"Königreich Schweden\",\n                \"common\": \"Schweden\"\n            },\n            \"est\": {\n                \"official\": \"Rootsi Kuningriik\",\n                \"common\": \"Rootsi\"\n            },\n            \"fin\": {\n                \"official\": \"Ruotsin kuningaskunta\",\n                \"common\": \"Ruotsi\"\n            },\n            \"fra\": {\n                \"official\": \"Royaume de Suède\",\n                \"common\": \"Suède\"\n            },\n            \"hrv\": {\n                \"official\": \"Kraljevina Švedska\",\n                \"common\": \"Švedska\"\n            },\n            \"hun\": {\n                \"official\": \"Svéd Királyság\",\n                \"common\": \"Svédország\"\n            },\n            \"ita\": {\n                \"official\": \"Regno di Svezia\",\n                \"common\": \"Svezia\"\n            },\n            \"jpn\": {\n                \"official\": \"スウェーデン王国\",\n                \"common\": \"スウェーデン\"\n            },\n            \"kor\": {\n                \"official\": \"스웨덴 왕국\",\n                \"common\": \"스웨덴\"\n            },\n            \"nld\": {\n                \"official\": \"Koninkrijk Zweden\",\n                \"common\": \"Zweden\"\n            },\n            \"per\": {\n                \"official\": \"پادشاهی سوئد\",\n                \"common\": \"سوئد\"\n            },\n            \"pol\": {\n                \"official\": \"Królestwo Szwecji\",\n                \"common\": \"Szwecja\"\n            },\n            \"por\": {\n                \"official\": \"Reino da Suécia\",\n                \"common\": \"Suécia\"\n            },\n            \"rus\": {\n                \"official\": \"Королевство Швеция\",\n                \"common\": \"Швеция\"\n            },\n            \"slk\": {\n                \"official\": \"Švédske kráľovstvo\",\n                \"common\": \"Švédsko\"\n            },\n            \"spa\": {\n                \"official\": \"Reino de Suecia\",\n                \"common\": \"Suecia\"\n            },\n            \"swe\": {\n                \"official\": \"Konungariket Sverige\",\n                \"common\": \"Sverige\"\n            },\n            \"urd\": {\n                \"official\": \"مملکتِ سویڈن\",\n                \"common\": \"سویڈن\"\n            },\n            \"zho\": {\n                \"official\": \"瑞典王国\",\n                \"common\": \"瑞典\"\n            }\n        },\n        \"latlng\": [\n            62,\n            15\n        ],\n        \"landlocked\": false,\n        \"borders\": [\n            \"FIN\",\n            \"NOR\"\n        ],\n        \"area\": 450295,\n        \"demonyms\": {\n            \"eng\": {\n                \"f\": \"Swedish\",\n                \"m\": \"Swedish\"\n            },\n            \"fra\": {\n                \"f\": \"Suédoise\",\n                \"m\": \"Suédois\"\n            }\n        },\n        \"flag\": \"🇸🇪\",\n        \"maps\": {\n            \"googleMaps\": \"https://goo.gl/maps/iqygE491ADVgnBW39\",\n            \"openStreetMaps\": \"https://www.openstreetmap.org/relation/52822\"\n        },\n        \"population\": 10353442,\n        \"gini\": {\n            \"2018\": 30\n        },\n        \"fifa\": \"SWE\",\n        \"car\": {\n            \"signs\": [\n                \"S\"\n            ],\n            \"side\": \"right\"\n        },\n        \"timezones\": [\n            \"UTC+01:00\"\n        ],\n        \"continents\": [\n            \"Europe\"\n        ],\n        \"flags\": {\n            \"png\": \"https://flagcdn.com/w320/se.png\",\n            \"svg\": \"https://flagcdn.com/se.svg\"\n        },\n        \"coatOfArms\": {\n            \"png\": \"https://mainfacts.com/media/images/coats_of_arms/se.png\",\n            \"svg\": \"https://mainfacts.com/media/images/coats_of_arms/se.svg\"\n        },\n        \"startOfWeek\": \"monday\",\n        \"capitalInfo\": {\n            \"latlng\": [\n                59.33,\n                18.05\n            ]\n        },\n        \"postalCode\": {\n            \"format\": \"SE-### ##\",\n            \"regex\": \"^(?:SE)*(\\\\d{5})$\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Search by country code EE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/alpha?codes=EE",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"alpha"
+					],
+					"query": [
+						{
+							"key": "codes",
+							"value": "EE"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search by country code EE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.com/v3.1/alpha?codes=EE",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"alpha"
+							],
+							"query": [
+								{
+									"key": "codes",
+									"value": "EE"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jul 2022 21:38:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.38 (Debian)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "content-length",
+							"value": "1259"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": {\n            \"common\": \"Estonia\",\n            \"official\": \"Republic of Estonia\",\n            \"nativeName\": {\n                \"est\": {\n                    \"official\": \"Eesti Vabariik\",\n                    \"common\": \"Eesti\"\n                }\n            }\n        },\n        \"tld\": [\n            \".ee\"\n        ],\n        \"cca2\": \"EE\",\n        \"ccn3\": \"233\",\n        \"cca3\": \"EST\",\n        \"cioc\": \"EST\",\n        \"independent\": true,\n        \"status\": \"officially-assigned\",\n        \"unMember\": true,\n        \"currencies\": {\n            \"EUR\": {\n                \"name\": \"Euro\",\n                \"symbol\": \"€\"\n            }\n        },\n        \"idd\": {\n            \"root\": \"+3\",\n            \"suffixes\": [\n                \"72\"\n            ]\n        },\n        \"capital\": [\n            \"Tallinn\"\n        ],\n        \"altSpellings\": [\n            \"EE\",\n            \"Eesti\",\n            \"Republic of Estonia\",\n            \"Eesti Vabariik\"\n        ],\n        \"region\": \"Europe\",\n        \"subregion\": \"Northern Europe\",\n        \"languages\": {\n            \"est\": \"Estonian\"\n        },\n        \"translations\": {\n            \"ara\": {\n                \"official\": \"جمهورية إستونيا\",\n                \"common\": \"إستونيا\"\n            },\n            \"ces\": {\n                \"official\": \"Estonská republika\",\n                \"common\": \"Estonsko\"\n            },\n            \"cym\": {\n                \"official\": \"Gweriniaeth Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"deu\": {\n                \"official\": \"Republik Estland\",\n                \"common\": \"Estland\"\n            },\n            \"est\": {\n                \"official\": \"Eesti Vabariik\",\n                \"common\": \"Eesti\"\n            },\n            \"fin\": {\n                \"official\": \"Viron tasavalta\",\n                \"common\": \"Viro\"\n            },\n            \"fra\": {\n                \"official\": \"République d'Estonie\",\n                \"common\": \"Estonie\"\n            },\n            \"hrv\": {\n                \"official\": \"Republika Estonija\",\n                \"common\": \"Estonija\"\n            },\n            \"hun\": {\n                \"official\": \"Észt Köztársaság\",\n                \"common\": \"Észtország\"\n            },\n            \"ita\": {\n                \"official\": \"Repubblica di Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"jpn\": {\n                \"official\": \"エストニア共和国\",\n                \"common\": \"エストニア\"\n            },\n            \"kor\": {\n                \"official\": \"에스토니아 공화국\",\n                \"common\": \"에스토니아\"\n            },\n            \"nld\": {\n                \"official\": \"Republiek Estland\",\n                \"common\": \"Estland\"\n            },\n            \"per\": {\n                \"official\": \"جمهوری استونی\",\n                \"common\": \"اِستونی\"\n            },\n            \"pol\": {\n                \"official\": \"Republika Estońska\",\n                \"common\": \"Estonia\"\n            },\n            \"por\": {\n                \"official\": \"República da Estónia\",\n                \"common\": \"Estónia\"\n            },\n            \"rus\": {\n                \"official\": \"Эстонская Республика\",\n                \"common\": \"Эстония\"\n            },\n            \"slk\": {\n                \"official\": \"Estónska republika\",\n                \"common\": \"Estónsko\"\n            },\n            \"spa\": {\n                \"official\": \"República de Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"swe\": {\n                \"official\": \"Republiken Estland\",\n                \"common\": \"Estland\"\n            },\n            \"urd\": {\n                \"official\": \"جمہوریہ اسٹونیا\",\n                \"common\": \"اسٹونیا\"\n            },\n            \"zho\": {\n                \"official\": \"爱沙尼亚共和国\",\n                \"common\": \"爱沙尼亚\"\n            }\n        },\n        \"latlng\": [\n            59,\n            26\n        ],\n        \"landlocked\": false,\n        \"borders\": [\n            \"LVA\",\n            \"RUS\"\n        ],\n        \"area\": 45227,\n        \"demonyms\": {\n            \"eng\": {\n                \"f\": \"Estonian\",\n                \"m\": \"Estonian\"\n            },\n            \"fra\": {\n                \"f\": \"Estonienne\",\n                \"m\": \"Estonien\"\n            }\n        },\n        \"flag\": \"🇪🇪\",\n        \"maps\": {\n            \"googleMaps\": \"https://goo.gl/maps/6SsynwGUodL1sDvq8\",\n            \"openStreetMaps\": \"https://www.openstreetmap.org/relation/79510\"\n        },\n        \"population\": 1331057,\n        \"gini\": {\n            \"2018\": 30.3\n        },\n        \"fifa\": \"EST\",\n        \"car\": {\n            \"signs\": [\n                \"EST\"\n            ],\n            \"side\": \"right\"\n        },\n        \"timezones\": [\n            \"UTC+02:00\"\n        ],\n        \"continents\": [\n            \"Europe\"\n        ],\n        \"flags\": {\n            \"png\": \"https://flagcdn.com/w320/ee.png\",\n            \"svg\": \"https://flagcdn.com/ee.svg\"\n        },\n        \"coatOfArms\": {\n            \"png\": \"https://mainfacts.com/media/images/coats_of_arms/ee.png\",\n            \"svg\": \"https://mainfacts.com/media/images/coats_of_arms/ee.svg\"\n        },\n        \"startOfWeek\": \"monday\",\n        \"capitalInfo\": {\n            \"latlng\": [\n                59.43,\n                24.72\n            ]\n        },\n        \"postalCode\": {\n            \"format\": \"#####\",\n            \"regex\": \"^(\\\\d{5})$\"\n        }\n    }\n]"
+				}
+			]
+		}
+	]
+}
