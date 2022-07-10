@@ -13,5 +13,5 @@ INSTRUCTIONS
 - Postman
 
 2. Clone the repo:
-- Git: https://github.com/omowura/api.git OR
+- Git: https://github.com/omowura/api_task.git OR
 - Download a Zip of master manually on your computer
